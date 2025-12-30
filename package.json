@@ -1,0 +1,25 @@
+{
+  "name": "privasvg",
+  "type": "module",
+  "collaborators": [
+    "Haidar"
+  ],
+  "description": "PrivaSVG - Private, in-browser raster to vector (SVG) converter",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "files": [
+    "privasvg_bg.wasm",
+    "privasvg.js",
+    "privasvg.d.ts"
+  ],
+  "main": "privasvg.js",
+  "types": "privasvg.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ],
+  "keywords": [
+    "svg",
+    "computer-graphics",
+    "vectorization"
+  ]
+}
