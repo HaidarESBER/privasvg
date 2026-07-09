@@ -8,7 +8,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
-    publicPath: '/'
+    // 'auto' resolves chunks/assets relative to the document, so the build
+    // works both at the dev-server root and under a GitHub Pages subpath.
+    publicPath: 'auto'
   },
   mode: "development",
   devServer: {
