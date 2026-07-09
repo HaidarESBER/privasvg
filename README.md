@@ -6,6 +6,8 @@
 
 **AI background removal · manual retouch · upscaling · true-color & B/W vectorization · bulk processing**
 
+[![Live Demo](https://img.shields.io/badge/live_demo-haidaresber.github.io%2Fprivasvg-0b5e3b?style=for-the-badge)](https://haidaresber.github.io/privasvg/)
+
 [![License](https://img.shields.io/badge/license-MIT_OR_Apache--2.0-0b5e3b.svg)](#license)
 ![Rust](https://img.shields.io/badge/Rust-WASM-0b5e3b)
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-0b5e3b)
@@ -24,6 +26,8 @@ then trace it to a crisp `SVG` — without uploading a single byte to a server.
 Privacy is the point: the vectorization engine is Rust compiled to **WebAssembly**, the
 background-removal model runs on **ONNX Runtime Web**, and every pixel is processed on your
 own device. No accounts, no uploads, no tracking.
+
+> **Try it now — no install:** <https://haidaresber.github.io/privasvg/>
 
 ## The pipeline
 
