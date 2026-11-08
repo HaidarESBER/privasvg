@@ -128,6 +128,10 @@ Dual-licensed under **MIT OR Apache-2.0** — see [`LICENSE-MIT`](LICENSE-MIT) a
 [`LICENSE-APACHE`](LICENSE-APACHE).
 
 
+## 📝 Write-up
+
+- [PrivaSVG: image-to-SVG vectorization in the browser with Rust and WebAssembly](https://dev.to/haidaresber/privasvg-image-to-svg-vectorization-in-the-browser-with-rust-and-webassembly-4inb)
+
 ---
 
 ## 👤 Author
