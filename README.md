@@ -33,6 +33,15 @@ own device. No accounts, no uploads, no tracking.
   <img src="docs/screenshot-app.png" alt="PrivaSVG web UI: background removal, image enhancement and vectorization panels with an image drop zone" width="860">
 </p>
 
+### Raster in, vector out
+
+A simple test image (left) converted to SVG with one click (right). Both captures are from the live demo.
+
+<p align="center">
+  <img src="docs/screenshot-original.jpg" alt="PrivaSVG with a raster test image loaded in the Original panel" width="425">
+  <img src="docs/screenshot-vector-result.jpg" alt="The same image converted to a vector SVG in the Vector Result panel" width="425">
+</p>
+
 ## The pipeline
 
 ```
