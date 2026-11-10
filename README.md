@@ -29,6 +29,10 @@ own device. No accounts, no uploads, no tracking.
 
 > **Try it now — no install:** <https://haidaresber.github.io/privasvg/>
 
+<p align="center">
+  <img src="docs/screenshot-app.png" alt="PrivaSVG web UI: background removal, image enhancement and vectorization panels with an image drop zone" width="860">
+</p>
+
 ## The pipeline
 
 ```
@@ -103,6 +107,10 @@ PrivaSVG uses an editorial, privacy-forward visual language shared with
 serif display type, monospace labels, generous whitespace, and a matching light/dark theme.
 
 ## How it works
+
+<p align="center">
+  <img src="docs/architecture.svg" alt="PrivaSVG architecture: web UI, background removal, Rust/WASM vectorizer, all inside the browser" width="860">
+</p>
 
 - **Vectorization core** — a Rust engine (VTracer lineage) exposing `ColorImageConverter` and
   `BinaryImageConverter`, compiled to WebAssembly with `wasm-bindgen`. It clusters pixels,
