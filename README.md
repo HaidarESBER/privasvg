@@ -8,6 +8,7 @@
 
 [![Live Demo](https://img.shields.io/badge/live_demo-haidaresber.github.io%2Fprivasvg-0b5e3b?style=for-the-badge)](https://haidaresber.github.io/privasvg/)
 
+[![CI](https://github.com/HaidarESBER/privasvg/actions/workflows/ci.yml/badge.svg)](https://github.com/HaidarESBER/privasvg/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT_OR_Apache--2.0-0b5e3b.svg)](#license)
 ![Rust](https://img.shields.io/badge/Rust-WASM-0b5e3b)
 ![WebAssembly](https://img.shields.io/badge/WebAssembly-0b5e3b)
