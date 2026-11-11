@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "PrivaSVG - Private, in-browser raster to vector (SVG) converter",
   "author": "Haidar Esber",
-  "license": "MIT",
+  "license": "MIT OR Apache-2.0",
   "private": true,
   "main": "index.js",
   "scripts": {
