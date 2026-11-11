@@ -288,3 +288,44 @@ impl ColorImageConverter {
     }
 }
 
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn solid(width: usize, height: usize, rgba: [u8; 4]) -> ColorImage {
+        ColorImage {
+            pixels: rgba.iter().cycle().take(width * height * 4).copied().collect(),
+            width,
+            height,
+        }
+    }
+
+    #[test]
+    fn color_exists_ignores_alpha() {
+        let img = solid(2, 2, [10, 20, 30, 0]);
+        assert!(ColorImageConverter::color_exists_in_image(&img, Color::new(10, 20, 30)));
+        assert!(!ColorImageConverter::color_exists_in_image(&img, Color::new(10, 20, 31)));
+    }
+
+    #[test]
+    fn unused_key_color_prefers_cyan() {
+        let img = solid(4, 4, [0, 0, 0, 255]);
+        let key = ColorImageConverter::find_unused_color_in_image(&img).unwrap();
+        assert_eq!((key.r, key.g, key.b), (0, 255, 255));
+    }
+
+    #[test]
+    fn unused_key_color_skips_colors_present() {
+        let img = solid(4, 4, [0, 255, 255, 255]);
+        let key = ColorImageConverter::find_unused_color_in_image(&img).unwrap();
+        assert_eq!((key.r, key.g, key.b), (255, 0, 255));
+    }
+
+    #[test]
+    fn keying_detects_transparent_images() {
+        assert!(ColorImageConverter::should_key_image(&solid(10, 10, [0, 0, 0, 0])));
+        assert!(!ColorImageConverter::should_key_image(&solid(10, 10, [5, 5, 5, 255])));
+        assert!(!ColorImageConverter::should_key_image(&solid(0, 0, [0, 0, 0, 0])));
+    }
+}
